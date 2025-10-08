@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import TrendingApp from "../TrendingApp/TrendingApp";
 import { useNavigate } from "react-router";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
 const TrendingApps = ({ data }) => {
   const sortedData = [...data].sort((a, b) => b.downloads - a.downloads);
@@ -19,7 +20,7 @@ const TrendingApps = ({ data }) => {
         Explore All Trending Apps on the Market developed by us
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <Suspense fallback={<span>LOADING.....</span>}>
+        <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
           {appsToShow.map((appData) => (
             <TrendingApp key={appData.id} appData={appData}></TrendingApp>
           ))}
