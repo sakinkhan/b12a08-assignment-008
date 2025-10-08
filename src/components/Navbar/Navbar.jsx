@@ -37,7 +37,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="flex items-center gap-2 px-1">
+        <ul className="flex items-center gap-4 px-1">
           <li>
             <NavLink to={"/"} className={({ isActive }) =>
           `inter-font font-medium text-[16px] ${
