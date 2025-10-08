@@ -322,5 +322,41 @@
       { "name": "4 star", "count": 10900 },
       { "name": "5 star", "count": 27200 }
     ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1682309652843-ed4eb60d473e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fG1vYmlsZSUyMGFwcCUyMGxvZ29zfGVufDB8fDB8fHww",
+    "title": "MindMosaic",
+    "companyName": "NeuraFlow Labs",
+    "id": 19,
+    "description": "MindMosaic helps users declutter their thoughts and map ideas visually. You can create mind maps, connect nodes with relationships, and add notes, images, or links. It syncs seamlessly across devices and integrates with Google Drive, Notion, and Slack. The app uses AI-assisted prompts to help brainstorm new connections and organize thoughts. With offline mode and collaboration tools, teams can co-create strategy maps, workflows, and creative concepts in real time. It’s minimal, fast, and perfect for thinkers, students, and project planners who need clarity and structure.",
+    "size": 158,
+    "reviews": 52000,
+    "ratingAvg": 4.7,
+    "downloads": 7.8,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 4600 },
+      { "name": "4 star", "count": 12200 },
+      { "name": "5 star", "count": 30800 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1722156533656-b22cbcf1c82e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fG1vYmlsZSUyMGFwcCUyMGxvZ29zfGVufDB8fDB8fHww",
+    "title": "FitPulse",
+    "companyName": "AthletiCore",
+    "id": 20,
+    "description": "FitPulse is a complete fitness companion app that tracks workouts, nutrition, and recovery in one dashboard. It includes over 400 guided workout routines, AI-generated training plans, and real-time feedback using motion tracking. Users can sync wearables like Fitbit and Apple Watch for accurate data. The nutrition tracker includes barcode scanning, calorie goals, and meal suggestions based on progress. FitPulse also features social challenges, personal coaching, and streak tracking to keep motivation high. It’s the ultimate all-in-one fitness and wellness platform for active lifestyles.",
+    "size": 241,
+    "reviews": 73000,
+    "ratingAvg": 4.9,
+    "downloads": 12.3,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 2800 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 14000 },
+      { "name": "5 star", "count": 48700 }
+    ]
   }
 ]

@@ -6,16 +6,16 @@ const TrendingApp = ({ appData }) => {
   const { title, ratingAvg, downloads, image } = appData;
 
   return (
-    <div className="card shadow-xl bg-white hover:scale-105 hover:duration-300 flex flex-col cursor-pointer">
+    <div className="card shadow-xl bg-white hover:scale-102 hover:duration-300 flex flex-col cursor-pointer">
       <figure className="px-4 pt-4 flex justify-center items-center">
         <img
           src={image}
-          alt={title}
+          alt='app Image'
           className="rounded-xl w-[316px] h-[316px] object-cover"
         />
       </figure>
       <div className="card-body items-left text-left space-y-3 flex-1">
-        <h2 className="card-title inter-font font-medium text-[20px] text-[#001931] truncate">
+        <h2 className="card-title inter-font font-medium text-[20px] text-[#001931] -mt-4">
           {title}
         </h2>
         <div className="card-actions flex justify-between mt-auto">
