@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
 import RatingChart from "../../components/RatingChart/RatingChart";
+import { ToastContainer, toast } from 'react-toastify';
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -18,7 +19,14 @@ const AppDetails = () => {
     reviews,
     ratingAvg,
     description,
+    size
   } = singleAppData;
+  
+  const [installed, setInstalled] = useState(false);
+  const handleInstall = () => {
+    setInstalled(true);
+    toast.success(`${title} has been successfully installed`);
+  }
   return (
     <div className="min-h-screen py-20 px-20">
       {/* App Details */}
@@ -69,8 +77,8 @@ const AppDetails = () => {
                 </p>
               </div>
             </div>
-            <button className="btn bg-[#00D390] text-white inter-font font-semibold text-[20px] py-6 px-8">
-              Install Now (291 MB)
+            <button onClick={()=>handleInstall()} className={`${installed? "btn-disabled" : ""} btn bg-[#00D390] text-white inter-font font-semibold text-[20px] py-6 px-8 `}>
+              {!installed? `Install Now (${size} MB)` : "Installed"}
             </button>
           </div>
         </div>
@@ -91,6 +99,7 @@ const AppDetails = () => {
           {description}
         </p>
       </div>
+      <ToastContainer theme="dark" position="bottom-center" />
     </div>
   );
 };
