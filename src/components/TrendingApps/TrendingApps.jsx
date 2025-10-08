@@ -1,7 +1,13 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import TrendingApp from "../TrendingApp/TrendingApp";
 
-const TrendingApps = ({data}) => {
+const TrendingApps = ({ data }) => {
+  const [showAll, setShowAll] = useState(false);
+
+  const sortedData = [...data].sort((a, b) => b.downloads - a.downloads);
+
+  const appsToShow = showAll ? sortedData : sortedData.slice(0, 8);
+
   return (
     <div className="py-20 flex flex-col justify-center items-center px-10 lg:px-20 bg-[#d2d2d2]/20">
       <h1 className="inter-font font-bold text-[32px] md:text-[48px] text-[#001931] text-center">
@@ -12,16 +18,16 @@ const TrendingApps = ({data}) => {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <Suspense fallback={<span>LOADING.....</span>}>
-            {
-                data.map(appData=> <TrendingApp key={appData.id} appData={appData}></TrendingApp>)
-            }
+          {appsToShow.map((appData) => (
+            <TrendingApp key={appData.id} appData={appData}></TrendingApp>
+          ))}
         </Suspense>
-        
       </div>
       <button
+        onClick={() => setShowAll(!showAll)}
         className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-8 py-6 inter-font font-semibold text-[16px] mt-10"
       >
-        Show All
+        {showAll ? "Show Less" : "Show All"}
       </button>
     </div>
   );
