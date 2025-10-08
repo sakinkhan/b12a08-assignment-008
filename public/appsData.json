@@ -1,0 +1,326 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "TaskFlow",
+    "companyName": "NovaWorks",
+    "id": 1,
+    "description": "TaskFlow is a productivity and project management app designed to help teams and individuals stay organized, meet deadlines, and communicate effectively. It brings together task lists, time tracking, and smart collaboration tools into one clean interface. You can assign tasks, set priorities, track progress, and even automate recurring actions with just a few taps. TaskFlow also integrates with Google Calendar, Slack, and Trello, ensuring a seamless workflow across platforms. For managers, it provides advanced analytics to identify bottlenecks and measure productivity trends. The app’s AI assistant predicts possible delays and recommends ways to optimize workload distribution. Users appreciate its balance between simplicity and power—offering just enough features to keep teams aligned without overwhelming them. Whether you’re a freelancer managing clients or a large organization handling multiple departments, TaskFlow adapts to your needs. Offline mode ensures you can keep working without internet access, and real-time cloud sync updates everything once you’re back online.",
+    "size": 120,
+    "reviews": 55000,
+    "ratingAvg": 4.7,
+    "downloads": 5.8,
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 3100 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 12500 },
+      { "name": "5 star", "count": 32300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "FitPulse",
+    "companyName": "HealthSync Ltd",
+    "id": 2,
+    "description": "FitPulse is a next-generation health and fitness app that helps users track workouts, monitor nutrition, and stay motivated with science-backed plans. It supports custom workout routines, daily step tracking, and sleep analysis, all integrated with Apple Health and Google Fit. The app’s nutrition module automatically calculates calories and macros based on your goals—whether that’s fat loss, muscle gain, or balanced maintenance. Users can join fitness challenges with friends, follow trainer-led video sessions, and use the adaptive AI coach that adjusts intensity depending on progress. FitPulse doesn’t just track data; it translates it into meaningful insights. A weekly wellness summary helps you see trends and make smarter choices. Its clean UI, dark mode, and personalized reminders make it more engaging than other fitness trackers. Built for consistency, it helps users turn fitness into a sustainable lifestyle rather than a short-term habit.",
+    "size": 95,
+    "reviews": 87000,
+    "ratingAvg": 4.6,
+    "downloads": 9.3,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 5200 },
+      { "name": "3 star", "count": 7300 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 50400 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1614680376739-414d95ff43df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "Tripify",
+    "companyName": "GlobeTrek Technologies",
+    "id": 3,
+    "description": "Tripify is your intelligent travel companion that simplifies trip planning, flight booking, and itinerary management. It automatically generates personalized itineraries based on your preferences—whether you love adventure, culture, or cuisine. Tripify scans thousands of travel deals to suggest the best flight and hotel combinations within your budget. You can also explore user-curated city guides, offline maps, and hidden gem recommendations. For frequent travelers, Tripify tracks your loyalty programs, predicts flight delays, and sends real-time alerts about gate changes or weather disruptions. The app’s built-in translator and expense tracker make traveling abroad effortless. Its community forum connects travelers who share tips, itineraries, and reviews. Everything syncs across devices, ensuring you never miss a detail. Whether you’re planning a solo backpacking trip or a luxury family vacation, Tripify turns chaotic travel planning into a smooth, enjoyable process.",
+    "size": 138,
+    "reviews": 62000,
+    "ratingAvg": 4.8,
+    "downloads": 7.1,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 2800 },
+      { "name": "3 star", "count": 5400 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 36300 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "CalmMind",
+    "companyName": "Serenity Apps",
+    "id": 4,
+    "description": "CalmMind helps users achieve better mental balance through guided meditations, sleep sounds, and breathing exercises. Designed by therapists and mindfulness coaches, the app focuses on emotional resilience and daily relaxation. Its library includes sessions for stress relief, focus, and better sleep, all narrated in soothing voices. CalmMind adapts to your mood using a daily check-in system, suggesting the right audio or practice for your current state. It also features a gratitude journal and gentle progress tracker to reinforce positive habits. You can personalize ambient soundscapes—from rainforests to ocean waves—to accompany your sessions. The app’s sleep stories help restless users unwind before bed. By blending meditation with behavioral science, CalmMind provides a complete toolkit for emotional health. It’s not just about relaxation—it’s about building mindfulness as a daily muscle.",
+    "size": 110,
+    "reviews": 74000,
+    "ratingAvg": 4.9,
+    "downloads": 8.6,
+    "ratings": [
+      { "name": "1 star", "count": 1900 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 4100 },
+      { "name": "4 star", "count": 14500 },
+      { "name": "5 star", "count": 51200 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1705988142466-e468bc654eeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "PhotoScapeGo",
+    "companyName": "PixelForge Studios",
+    "id": 5,
+    "description": "PhotoScapeGo gives creators powerful yet easy-to-use photo editing tools for mobile. It includes AI-based auto-enhancements, background blur, color grading filters, and one-touch retouching features that rival desktop software. Users can work with layers, apply masks, and edit RAW images without losing quality. The app’s smart resize function keeps images sharp for any platform, from Instagram stories to printable posters. Professionals appreciate the batch editor and preset tools that save hours of editing time. With integrated cloud sync, your edits stay consistent across devices. The community hub allows sharing presets, discovering new effects, and even collaborating on projects. Whether you’re a photographer, designer, or social media manager, PhotoScapeGo delivers creative control in a simple mobile interface. It’s not just a filter app—it’s a full creative studio in your pocket.",
+    "size": 155,
+    "reviews": 51000,
+    "ratingAvg": 4.5,
+    "downloads": 6.4,
+    "ratings": [
+      { "name": "1 star", "count": 2800 },
+      { "name": "2 star", "count": 3200 },
+      { "name": "3 star", "count": 6100 },
+      { "name": "4 star", "count": 11800 },
+      { "name": "5 star", "count": 27100 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1681487850722-f686554f95c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "LearnEase",
+    "companyName": "EduSpark Labs",
+    "id": 6,
+    "description": "LearnEase makes learning new topics simple and intuitive through interactive micro-lessons. Instead of sitting through long lectures, users can learn through bite-sized sessions with quizzes, visuals, and summaries that stick. The app covers everything from coding and marketing to languages and public speaking. Each course adjusts dynamically to your pace—slowing down when you struggle and skipping ahead when you’ve mastered a topic. It also includes a progress dashboard that visualizes how much time you’re investing and how your understanding improves. For professionals, LearnEase offers certification tracks recognized by partner institutions. The offline mode ensures you can keep learning without Wi-Fi, and AI-generated daily recommendations help you stay consistent. What makes LearnEase stand out is how it connects theory to practice—you learn by doing, not by memorizing. It’s ideal for busy people who want real learning in short bursts that actually fit into their lives.",
+    "size": 130,
+    "reviews": 63000,
+    "ratingAvg": 4.8,
+    "downloads": 8.9,
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 2600 },
+      { "name": "3 star", "count": 4100 },
+      { "name": "4 star", "count": 13200 },
+      { "name": "5 star", "count": 41000 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611162618828-bc409f073cbf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW9iaWxlJTIwYXBwJTIwaWNvbnN8ZW58MHx8MHx8fDA%3D",
+    "title": "MoneyMind",
+    "companyName": "ClearFinance",
+    "id": 7,
+    "description": "MoneyMind gives you a complete view of your finances—bank accounts, bills, subscriptions, and spending patterns—all in one dashboard. It connects securely to your financial institutions and categorizes every transaction automatically. The app highlights where your money goes each week and predicts upcoming expenses based on past behavior. You can set saving goals, track investments, and get smart alerts when spending spikes. For users new to budgeting, MoneyMind provides gentle nudges and visual breakdowns instead of overwhelming charts. It also includes credit score tracking and personalized suggestions to improve financial health. With bank-grade encryption and privacy controls, your data stays protected at all times. Whether you’re managing personal finances or household budgets, MoneyMind helps you make sense of money in a way that’s simple, visual, and effective.",
+    "size": 98,
+    "reviews": 72000,
+    "ratingAvg": 4.6,
+    "downloads": 8.7,
+    "ratings": [
+      { "name": "1 star", "count": 3800 },
+      { "name": "2 star", "count": 4700 },
+      { "name": "3 star", "count": 6600 },
+      { "name": "4 star", "count": 16300 },
+      { "name": "5 star", "count": 40600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "EcoTrack",
+    "companyName": "GreenLoop Labs",
+    "id": 8,
+    "description": "EcoTrack helps you measure and reduce your carbon footprint without the guilt or guesswork. Log your daily activities like travel, food, and energy use, and the app calculates your environmental impact in real time. It translates complex data into clear, visual dashboards so you can see the difference your choices make. EcoTrack also suggests simple swaps—like reducing meat consumption or using public transport—to shrink your footprint. Users can set sustainability goals, join community challenges, and track collective progress with friends. It integrates with smart home devices and even offsets your emissions through verified green projects. EcoTrack turns sustainability into something measurable and motivating. It’s perfect for individuals and businesses who want to take meaningful, trackable steps toward greener living, one habit at a time.",
+    "size": 105,
+    "reviews": 33000,
+    "ratingAvg": 4.5,
+    "downloads": 6.3,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 3700 },
+      { "name": "4 star", "count": 8900 },
+      { "name": "5 star", "count": 16800 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611162617263-4ec3060a058e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "MuseNote",
+    "companyName": "SoundCraft Co.",
+    "id": 9,
+    "description": "MuseNote is a creative music journaling app built for songwriters and producers who want to capture ideas instantly. You can record melodies, jot lyrics, and organize fragments by mood, genre, or instrument. The built-in audio editor allows you to trim, loop, and layer sounds directly from your phone. It integrates with cloud storage for quick backup and syncs projects across devices. MuseNote’s AI assistant can even suggest chords or harmonies based on what you’ve recorded. Its elegant interface mimics a classic studio notebook—simple, distraction-free, and beautifully designed for creators. You can export your ideas to DAWs like Ableton or GarageBand in seconds. Whether you’re a professional artist or just experimenting, MuseNote gives you the freedom to turn inspiration into music before it fades away.",
+    "size": 144,
+    "reviews": 25000,
+    "ratingAvg": 4.7,
+    "downloads": 4.8,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 3100 },
+      { "name": "4 star", "count": 7300 },
+      { "name": "5 star", "count": 11600 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1678996569798-2662baf6d452?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTZ8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "TravelTalk",
+    "companyName": "LinguaLink",
+    "id": 10,
+    "description": "TravelTalk is an offline translation app that bridges language gaps in real time. Whether you’re ordering food, asking directions, or meeting new people abroad, TravelTalk listens and translates instantly in both directions. It supports over 70 languages and includes offline dictionaries for travelers without roaming data. The app features a phrasebook for quick references and pronunciation guides that make speaking easier. It’s not just translation—it’s connection. TravelTalk also provides cultural notes so you can avoid awkward mistakes and engage more authentically. The interface is designed for speed, with big readable text and a simple tap-to-speak button. Frequent travelers love its reliability and accuracy even in noisy environments. For digital nomads and backpackers alike, TravelTalk is an essential travel companion that makes every conversation effortless.",
+    "size": 112,
+    "reviews": 48000,
+    "ratingAvg": 4.6,
+    "downloads": 9.2,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 4900 },
+      { "name": "4 star", "count": 9800 },
+      { "name": "5 star", "count": 28900 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1738825664058-850c8c06cb7d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "SnapChef",
+    "companyName": "Mealify Studios",
+    "id": 11,
+    "description": "SnapChef turns the food in your fridge into delicious meals. Just snap a picture of your ingredients, and the app uses AI recognition to suggest recipes. You can filter by cuisine, diet, or cooking time. Each recipe includes nutrition facts, prep tips, and video guides from real chefs. The app helps reduce food waste by suggesting creative ways to use leftovers. You can also save favorite dishes, plan weekly menus, and auto-generate grocery lists. SnapChef’s community lets users share home recipes and cooking hacks, adding a human touch to meal planning. Whether you’re a student, a busy parent, or just trying to cook smarter, SnapChef helps you make the most out of what you already have in your kitchen.",
+    "size": 125,
+    "reviews": 51000,
+    "ratingAvg": 4.7,
+    "downloads": 8.4,
+    "ratings": [
+      { "name": "1 star", "count": 2400 },
+      { "name": "2 star", "count": 2900 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 12500 },
+      { "name": "5 star", "count": 28200 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1660806982611-0a41c0527966?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fG1vYmlsZSUyMGFwcCUyMGljb25zfGVufDB8fDB8fHww",
+    "title": "SkillForge",
+    "companyName": "NovaLearn",
+    "id": 12,
+    "description": "SkillForge focuses on hands-on microlearning for busy professionals. Instead of long video courses, it offers practical five-minute challenges that teach you something useful every day—Excel tips, Python tricks, or leadership habits. You earn points for consistency, and AI tracks your progress across topics. The platform blends gamification with real-world relevance so you actually retain what you learn. Each lesson ends with a short interactive quiz to reinforce memory. It’s perfect for people who want to build skills fast without feeling overwhelmed. For teams, SkillForge includes leaderboards and group goals that keep learning fun. The clean design and short daily format make it ideal for commuting or coffee-break learning. It’s not just about gaining knowledge—it’s about applying it.",
+    "size": 117,
+    "reviews": 29500,
+    "ratingAvg": 4.8,
+    "downloads": 5.9,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 7600 },
+      { "name": "5 star", "count": 16700 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1720192861880-ecbd9f5a2ffe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAxfHxtb2JpbGUlMjBhcHAlMjBpY29uc3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "PetPal",
+    "companyName": "FurWave",
+    "id": 13,
+    "description": "PetPal is the all-in-one app for pet parents to manage their furry friends’ lives. It helps track feeding schedules, vet appointments, medication, and exercise routines. You can upload vaccination records and share them with groomers or pet sitters. PetPal also has a built-in social feed where owners post cute moments and adoption events. The AI reminders adapt to your pet’s needs and even predict when supplies might run low. The app syncs with GPS collars for walk tracking and integrates with smart feeders. Whether you own a dog, cat, or rabbit, PetPal organizes care so you can focus on the fun part—spending time together. It’s like a digital assistant and memory book rolled into one for your pet.",
+    "size": 103,
+    "reviews": 43000,
+    "ratingAvg": 4.6,
+    "downloads": 7.8,
+    "ratings": [
+      { "name": "1 star", "count": 1900 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 4700 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "5 star", "count": 23900 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1681487735113-5224f4e33cd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM3fHxtb2JpbGUlMjBhcHAlMjBpY29uc3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "NewsGlance",
+    "companyName": "ByteMedia",
+    "id": 14,
+    "description": "NewsGlance delivers the world’s top stories in a format built for modern attention spans. Instead of endless scrolling, it gives you concise news summaries in 60 seconds or less. Topics range from global affairs and tech innovation to finance and culture. You can follow your interests and get personalized digests twice daily. NewsGlance uses verified sources only, ensuring reliability and accuracy. Each story includes context cards that explain background details, making it perfect for readers who want to stay informed without the noise. The app’s minimalist interface and night mode create a clean reading experience. It’s journalism, refined for clarity and time efficiency.",
+    "size": 86,
+    "reviews": 38000,
+    "ratingAvg": 4.5,
+    "downloads": 9.4,
+    "ratings": [
+      { "name": "1 star", "count": 1700 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 4300 },
+      { "name": "4 star", "count": 9600 },
+      { "name": "5 star", "count": 20300 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1684179641331-e89c6320b6a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ1fHxtb2JpbGUlMjBhcHAlMjBpY29uc3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "HomeHaven",
+    "companyName": "SmartNest Co.",
+    "id": 15,
+    "description": "HomeHaven unifies your smart home devices into one beautifully simple app. It controls lights, thermostats, security cameras, and appliances from multiple brands in one dashboard. The automation builder lets you create custom routines—dim lights at sunset, play music when you enter, or lock doors automatically at night. Voice assistant integration supports Alexa, Siri, and Google Home. The app focuses on security and ease of use, offering encrypted local control so your devices respond even when the internet drops. HomeHaven also tracks energy usage and suggests optimizations to save on bills. It’s designed for families who want the convenience of a smart home without the complexity.",
+    "size": 182,
+    "reviews": 29000,
+    "ratingAvg": 4.7,
+    "downloads": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1400 },
+      { "name": "3 star", "count": 2700 },
+      { "name": "4 star", "count": 7800 },
+      { "name": "5 star", "count": 16200 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1738879392233-b90a58f3f22c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY5fHxtb2JpbGUlMjBhcHAlMjBpY29uc3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "BookNook",
+    "companyName": "Litverse",
+    "id": 16,
+    "description": "BookNook is a personalized reading platform that helps you discover, track, and discuss books with people who love reading as much as you do. It lets you build virtual bookshelves, track your reading progress, and join genre-based communities. BookNook’s recommendation engine uses your reading patterns and ratings to suggest new titles you’ll actually like. You can highlight, annotate, and sync notes across devices. The social features make it easy to form virtual book clubs, share reviews, and follow authors. Whether you’re a casual reader or an avid bookworm, BookNook enhances reading by blending personal journaling with social discovery in a distraction-free interface.",
+    "size": 142,
+    "reviews": 52000,
+    "ratingAvg": 4.8,
+    "downloads": 7.5,
+    "ratings": [
+      { "name": "1 star", "count": 2100 },
+      { "name": "2 star", "count": 2700 },
+      { "name": "3 star", "count": 4800 },
+      { "name": "4 star", "count": 12500 },
+      { "name": "5 star", "count": 29900 }
+    ]
+  },
+  {
+    "image": "https://plus.unsplash.com/premium_photo-1722092222973-3dba83c8ca1b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc3fHxtb2JpbGUlMjBhcHAlMjBpY29uc3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "CityRide",
+    "companyName": "UrbanWheels",
+    "id": 17,
+    "description": "CityRide offers fast, affordable, and eco-friendly transportation with real-time tracking and transparent pricing. Whether you’re booking a scooter, car, or shared bike, CityRide finds the nearest option instantly. It’s built for convenience—one app for all rides. Integrated navigation guides your route while safety alerts notify you of high-traffic zones. CityRide’s reward system encourages greener travel, offering discounts for shared rides. Frequent commuters can subscribe to monthly passes for unlimited trips. With digital receipts and contactless payment, getting around has never been simpler. CityRide’s combination of clean UX, punctual drivers, and sustainability focus makes it the go-to mobility app in cities worldwide.",
+    "size": 154,
+    "reviews": 87000,
+    "ratingAvg": 4.6,
+    "downloads": 8.7,
+    "ratings": [
+      { "name": "1 star", "count": 5200 },
+      { "name": "2 star", "count": 5900 },
+      { "name": "3 star", "count": 8800 },
+      { "name": "4 star", "count": 22000 },
+      { "name": "5 star", "count": 45100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1669220030141-fe98c19a35a8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTkyfHxtb2JpbGUlMjBhcHAlMjBpY29uc3xlbnwwfHwwfHx8MA%3D%3D",
+    "title": "Artify",
+    "companyName": "CanvasCore",
+    "id": 18,
+    "description": "Artify is a digital canvas and creative studio that lets artists sketch, paint, and design on the go. With over 200 custom brushes, layering tools, and advanced blending modes, it rivals desktop illustration software. The app supports stylus pressure sensitivity, making strokes feel natural and precise. Artists can create in full resolution and export to PSD or PNG. The community gallery allows creators to showcase their art, follow trends, and learn new techniques. Artify also includes tutorials and live sessions from professional illustrators. It’s fast, intuitive, and perfect for both hobbyists and professionals who want to keep their creative flow mobile.",
+    "size": 193,
+    "reviews": 46000,
+    "ratingAvg": 4.8,
+    "downloads": 9.6,
+    "ratings": [
+      { "name": "1 star", "count": 1800 },
+      { "name": "2 star", "count": 2100 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 10900 },
+      { "name": "5 star", "count": 27200 }
+    ]
+  }
+]
