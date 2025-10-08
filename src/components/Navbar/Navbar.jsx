@@ -4,7 +4,7 @@ import logoImg from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-lg px-[80px]">
+    <div className="navbar bg-base-100 shadow-lg px-[5px] lg:px-[80px]">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -41,24 +41,24 @@ const Navbar = () => {
           <li>
             <NavLink to={"/"} className={({ isActive }) =>
           `inter-font font-medium text-[16px] ${
-            isActive ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline underline-offset-4 decoration-2" 
-            : "text-black/90 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"
+            isActive ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline underline-offset-6 decoration-2 decoration-[#9F62F2]" 
+            : "text-black/90 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:bg-clip-text hover:text-transparent"
           }`
         }>Home</NavLink>
           </li>
           <li>
             <NavLink to={"/apps"} className={({ isActive }) =>
           `inter-font font-medium text-[16px] ${
-            isActive ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline underline-offset-4 decoration-2 decoration-[#9F62F2]" 
-            : "text-black/90 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"
+            isActive ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline underline-offset-6 decoration-2 decoration-[#9F62F2]" 
+            : "text-black/90 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:bg-clip-text hover:text-transparent"
           }`
         }>Apps</NavLink>
           </li>
           <li>
             <NavLink to={"/installation"} className={({ isActive }) =>
           `inter-font font-medium text-[16px] ${
-            isActive ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline underline-offset-4 decoration-2" 
-            : "text-black/90 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"
+            isActive ? "bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline underline-offset-6 decoration-2 decoration-[#9F62F2]" 
+            : "text-black/90 hover:bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:bg-clip-text hover:text-transparent"
           }`
         }>Installation</NavLink>
           </li>
