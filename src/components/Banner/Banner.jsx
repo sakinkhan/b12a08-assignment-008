@@ -20,12 +20,12 @@ const Banner = () => {
       </p>
       <div className="flex flex-col md:flex-row items-center gap-5 justify-center mt-2 md:mt-10">
         <button onClick={() => window.open("https://play.google.com/store/apps/", "_blank")}
-                className="btn btn-outline border-[#D2D2D2] inter-font text-[#001931] font-semibold text-[20px] p-7">
+                className="btn btn-outline border-[#bab8b8] inter-font text-[#001931] font-semibold text-[20px] p-7">
           <img src={googlePlayImg} alt="googlePlayImg" />
           Google Play
         </button>
         <button onClick={() => window.open("https://www.apple.com/app-store/", "_blank")} 
-                className="btn btn-outline border-[#D2D2D2] inter-font text-[#001931] font-semibold text-[20px] p-7">
+                className="btn btn-outline border-[#bab8b8] inter-font text-[#001931] font-semibold text-[20px] p-7">
           <img src={appStoreImg} alt="appStoreImg" />
           App Store
         </button>
