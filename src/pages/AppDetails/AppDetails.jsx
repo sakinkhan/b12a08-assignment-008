@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
 import RatingChart from "../../components/RatingChart/RatingChart";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify";
+import {
+  addToLocalStorage,
+  getInstalledApps,
+} from "../../Utils/addToLocalStorage";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -19,14 +23,29 @@ const AppDetails = () => {
     reviews,
     ratingAvg,
     description,
-    size
+    size,
   } = singleAppData;
-  
+
   const [installed, setInstalled] = useState(false);
-  const handleInstall = () => {
+
+  useEffect(() => {
+    const installedApps = getInstalledApps();
+    if (installedApps.includes(appId)) {
+      setInstalled(true);
+    }
+  }, [appId]);
+
+  const handleInstall = (id) => {
+    const result = addToLocalStorage(id);
+
+    if (!result.success) {
+      toast.info(result.message);
+      return;
+    }
     setInstalled(true);
     toast.success(`${title} has been successfully installed`);
-  }
+  };
+
   return (
     <div className="min-h-screen py-20 px-20">
       {/* App Details */}
@@ -77,8 +96,13 @@ const AppDetails = () => {
                 </p>
               </div>
             </div>
-            <button onClick={()=>handleInstall()} className={`${installed? "btn-disabled" : ""} btn bg-[#00D390] text-white inter-font font-semibold text-[20px] py-6 px-8 `}>
-              {!installed? `Install Now (${size} MB)` : "Installed"}
+            <button
+              onClick={() => handleInstall(appId)}
+              className={`${
+                installed ? "btn-disabled" : ""
+              } btn bg-[#00D390] text-white inter-font font-semibold text-[20px] py-6 px-8 `}
+            >
+              {!installed ? `Install Now (${size} MB)` : "Installed"}
             </button>
           </div>
         </div>
