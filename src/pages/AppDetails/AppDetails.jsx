@@ -4,7 +4,7 @@ import downloadIcon from "../../assets/icon-downloads.png";
 import ratingIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
 import RatingChart from "../../components/RatingChart/RatingChart";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import {
   addToLocalStorage,
   getInstalledApps,
@@ -123,7 +123,6 @@ const AppDetails = () => {
           {description}
         </p>
       </div>
-      <ToastContainer theme="dark" position="bottom-center" />
     </div>
   );
 };

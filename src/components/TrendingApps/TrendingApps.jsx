@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
 const TrendingApps = ({ data }) => {
-  const sortedData = [...data].sort((a, b) => b.downloads - a.downloads);
+  const sortedData = [...data].sort((a, b) => b.ratingAvg - a.ratingAvg);
   const appsToShow = sortedData.slice(0, 8);
   const navigate = useNavigate();
   const handleShowAll = () => {
@@ -17,7 +17,7 @@ const TrendingApps = ({ data }) => {
         Trending Apps
       </h1>
       <p className="inter-font text-[16px] md:text-[20px] text-[#001931] text-center mb-10">
-        Explore All Trending Apps on the Market developed by us
+        Discover what everyone’s loving right now. <br /> <span className="font-semibold text-[#632EE3]">Sorted by Top Ratings — straight from our best work!</span>
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>

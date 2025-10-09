@@ -1,3 +1,4 @@
+// get
 export const getInstalledApps = () => {
   try {
     const installedAppsStr = localStorage.getItem("applist");
@@ -8,6 +9,7 @@ export const getInstalledApps = () => {
   }
 };
 
+//save
 export const addToLocalStorage = (id) => {
   try {
     const installedAppData = getInstalledApps();
@@ -25,3 +27,17 @@ export const addToLocalStorage = (id) => {
     return { success: false, message: "Error saving to localStorage" };
   }
 };
+
+// Uninstall/remove apps
+export const removeFromLocalStorage = (id) => {
+  const installedAppList = getInstalledApps();
+  try {
+    const updatedInstalledAppList = installedAppList.filter(appId => Number(appId) !== Number(id));
+    localStorage.setItem('applist', JSON.stringify(updatedInstalledAppList));
+    console.log(updatedInstalledAppList);
+    return { success: true, message: "App uninstalled successfully" };
+  } catch (err) {
+    console.log(err);
+    return { success: false, message: "Error uninstalling app" };
+  }
+}

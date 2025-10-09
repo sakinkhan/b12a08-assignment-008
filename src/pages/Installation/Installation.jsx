@@ -3,12 +3,13 @@ import { useLoaderData } from "react-router";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
 import { getInstalledApps } from "../../Utils/addToLocalStorage";
 
+
 const Installation = () => {
   const data = useLoaderData();
 
   const [installedList, setInstalledList] = useState([]);
-  const [sort, setSort] = useState('');
-
+  const [sort, setSort] = useState("");
+  
   useEffect(() => {
     const storedAppData = getInstalledApps();
     const convertedStoredAppData = storedAppData.map((id) => parseInt(id));
@@ -22,13 +23,22 @@ const Installation = () => {
     setSort(sortType);
 
     if (sortType === "High-Low") {
-      const sortedByHighToLow = [...installedList].sort((a,b) => b.downloads - a.downloads);
+      const sortedByHighToLow = [...installedList].sort(
+        (a, b) => b.downloads - a.downloads
+      );
       setInstalledList(sortedByHighToLow);
     }
     if (sortType === "Low-High") {
-      const sortedByLowToHigh = [...installedList].sort((a,b) => a.downloads - b.downloads);
+      const sortedByLowToHigh = [...installedList].sort(
+        (a, b) => a.downloads - b.downloads
+      );
       setInstalledList(sortedByLowToHigh);
     }
+  };
+
+  const handleUninstall = (id) => {
+    const updatedAppList = installedList.filter((app)=> app.id !== id);
+    setInstalledList(updatedAppList);
   }
 
   return (
@@ -41,8 +51,8 @@ const Installation = () => {
           Explore All Apps on the Market developed by us. Here are the list of
           apps you installed
         </p>
-        <div className="flex items-center justify-between">
-          <p className="inter-font font-semibold text-[24px] text-[#001931]">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <p className="inter-font font-semibold text-[18px] md:text-[24px] text-[#001931]">
             ({installedList.length}) Apps Found
           </p>
           <div className="dropdown dropdown-end">
@@ -51,26 +61,39 @@ const Installation = () => {
               role="button"
               className="btn m-1 inter-font text-[16px] text-[#627382] "
             >
-              {sort? `Sort By Download Count: ${sort}` : `Sort By Download Count`} {!sort && "⬇️"}
+              {sort
+                ? `Sort By Download Count: ${sort}`
+                : `Sort By Download Count`}{" "}
+              {!sort && "⬇️"}
             </div>
             <ul
               tabIndex={0}
               className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
             >
               <li>
-                <a onClick={()=> handleSort("High-Low")}>High-Low</a>
+                <a onClick={() => handleSort("High-Low")}>High-Low</a>
               </li>
               <li>
-                <a onClick={()=> handleSort("Low-High")}>Low-High</a>
+                <a onClick={() => handleSort("Low-High")}>Low-High</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className="space-y-4">
-        {installedList.map((appData) => (
-          <InstalledApp key={appData.id} appData={appData}></InstalledApp>
-        ))}
+        {installedList.length > 0 ? (
+          installedList.map((appData) => (
+            <InstalledApp
+              key={appData.id}
+              appData={appData}
+              onUninstall = {handleUninstall}
+            ></InstalledApp>
+          ))
+        ) : (
+          <p className="inter-font font-extrabold text-5xl text-center text-[#001931]/60 py-20">
+            No installed apps found.
+          </p>
+        )}
       </div>
     </div>
   );
