@@ -19,7 +19,7 @@ const TrendingApps = ({ data }) => {
       <p className="inter-font text-[16px] md:text-[20px] text-[#001931] text-center mb-10">
         Discover what everyone’s loving right now. <br /> <span className="font-semibold text-[#632EE3]">Sorted by Top Ratings — straight from our best work!</span>
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <Suspense fallback={<LoadingSpinner></LoadingSpinner>}>
           {appsToShow.map((appData) => (
             <TrendingApp key={appData.id} appData={appData}></TrendingApp>
