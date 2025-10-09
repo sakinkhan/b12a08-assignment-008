@@ -34,7 +34,6 @@ export const removeFromLocalStorage = (id) => {
   try {
     const updatedInstalledAppList = installedAppList.filter(appId => Number(appId) !== Number(id));
     localStorage.setItem('applist', JSON.stringify(updatedInstalledAppList));
-    console.log(updatedInstalledAppList);
     return { success: true, message: "App uninstalled successfully" };
   } catch (err) {
     console.log(err);

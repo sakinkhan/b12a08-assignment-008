@@ -10,7 +10,7 @@ const Root = () => {
         <div>
             <Navbar></Navbar>
             <Outlet></Outlet>
-            <ToastContainer theme="dark" position="bottom-center"></ToastContainer>
+            <ToastContainer theme="colored" position="bottom-center"></ToastContainer>
             <Footer></Footer>
         </div>
     );

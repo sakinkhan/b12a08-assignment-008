@@ -90,7 +90,7 @@ const Installation = () => {
             ></InstalledApp>
           ))
         ) : (
-          <p className="inter-font font-extrabold text-5xl text-center text-[#001931]/60 py-20">
+          <p className="inter-font font-extrabold text-2xl md:text-5xl text-center text-[#001931]/60 py-20">
             No installed apps found.
           </p>
         )}

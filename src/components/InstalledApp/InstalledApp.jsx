@@ -13,7 +13,7 @@ const InstalledApp = ({ appData, onUninstall }) => {
       return;
     } else {
       onUninstall(id);
-      toast.info(`${title} has been uninstalled successfully`);
+      toast.error(`${title} has been uninstalled successfully`);
     }
   };
 
