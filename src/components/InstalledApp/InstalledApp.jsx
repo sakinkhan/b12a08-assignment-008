@@ -25,11 +25,11 @@ const InstalledApp = ({ appData, onUninstall }) => {
           alt="app icon"
           className="w-30 h-30 object-cover rounded-3xl p-3"
         />
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center md:items-start px-1">
           <p className="inter-font font-medium text-[20px] text-[#001931]">
             {title}
           </p>
-          <div className="flex items-center flex-wrap justify-center gap-4">
+          <div className="flex items-center flex-wrap justify-center gap-4 px-1">
             <div className="flex items-center gap-1">
               <img
                 src={downloadIcon}

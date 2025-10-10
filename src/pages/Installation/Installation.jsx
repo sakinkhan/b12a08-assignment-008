@@ -1,22 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData } from "react-router";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
 import { getInstalledApps } from "../../Utils/addToLocalStorage";
+import InstallationSkeleton from "../../components/LoadingSpinner/InstallationSkeleton";
 
 
 const Installation = () => {
-  const data = useLoaderData();
+  // const data = useLoaderData();
 
   const [installedList, setInstalledList] = useState([]);
   const [sort, setSort] = useState("");
-  
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const storedAppData = getInstalledApps();
-    const convertedStoredAppData = storedAppData.map((id) => parseInt(id));
-    const installedAppList = data.filter((app) =>
-      convertedStoredAppData.includes(app.id)
-    );
-    setInstalledList(installedAppList);
+    fetch("/appsData.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const storedAppData = getInstalledApps();
+        const convertedStoredAppData = storedAppData.map((id) => Number(id));
+        const installedAppList = data.filter((app) =>
+          convertedStoredAppData.includes(app.id)
+        );
+        setInstalledList(installedAppList);
+      })
+      .finally(() => setLoading(false));
   }, []);
 
   const handleSort = (sortType) => {
@@ -43,6 +49,7 @@ const Installation = () => {
 
   return (
     <div className="py-20 px-5 lg:px-20 bg-[#d2d2d2]/20 min-h-screen">
+      
       <div>
         <h1 className="inter-font font-bold text-[32px] md:text-[48px] text-[#001931] text-center">
           Your Installed Apps
@@ -80,21 +87,25 @@ const Installation = () => {
           </div>
         </div>
       </div>
-      <div className="space-y-4">
-        {installedList.length > 0 ? (
-          installedList.map((appData) => (
+      {loading ? (
+        <div className="w-full">
+          <InstallationSkeleton count={getInstalledApps().length}></InstallationSkeleton>
+        </div>
+      ) : installedList.length > 0 ? (
+        <div className="space-y-4">
+          {installedList.map((appData) => (
             <InstalledApp
               key={appData.id}
               appData={appData}
-              onUninstall = {handleUninstall}
-            ></InstalledApp>
-          ))
-        ) : (
-          <p className="inter-font font-extrabold text-2xl md:text-5xl text-center text-[#001931]/60 py-20">
-            No installed apps found.
-          </p>
-        )}
-      </div>
+              onUninstall={handleUninstall}
+            />
+          ))}
+        </div>
+      ) : (
+        <p className="inter-font font-extrabold text-2xl md:text-5xl text-center text-[#001931]/60 py-20">
+          No installed apps found.
+        </p>
+      )}
     </div>
   );
 };
