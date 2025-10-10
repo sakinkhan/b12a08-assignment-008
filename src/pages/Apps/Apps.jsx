@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SingleApp from "../../components/SingleApp/SingleApp";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
+import SkeletonLoader from "../../components/LoadingSpinner/SkeletonLoader";
 
 const Apps = () => {
   const [data, setData] = useState([]);
@@ -64,7 +65,7 @@ const Apps = () => {
         </div>
       </div>
       {loading ? (
-        <div className="py-20 flex justify-center items-center h-screen">
+        <div className="py-20 flex justify-center items-center min-h-screen">
           <LoadingSpinner></LoadingSpinner>
         </div>
       ) : (

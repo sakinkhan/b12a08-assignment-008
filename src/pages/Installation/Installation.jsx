@@ -42,7 +42,7 @@ const Installation = () => {
   }
 
   return (
-    <div className="py-20 px-5 lg:px-20 bg-[#d2d2d2]/20">
+    <div className="py-20 px-5 lg:px-20 bg-[#d2d2d2]/20 min-h-screen">
       <div>
         <h1 className="inter-font font-bold text-[32px] md:text-[48px] text-[#001931] text-center">
           Your Installed Apps

@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import Banner from "../../components/Banner/Banner";
 import DataSection from "../../components/DataSection/DataSection";
 import TrendingApps from "../../components/TrendingApps/TrendingApps";
