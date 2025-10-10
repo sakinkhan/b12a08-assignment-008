@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
 import { getInstalledApps } from "../../Utils/addToLocalStorage";
-import InstallationSkeleton from "../../components/LoadingSpinner/InstallationSkeleton";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 
 
