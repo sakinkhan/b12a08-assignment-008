@@ -65,8 +65,8 @@ const Apps = () => {
         </div>
       </div>
       {loading ? (
-        <div className="py-20 flex justify-center items-center min-h-screen">
-          <LoadingSpinner></LoadingSpinner>
+        <div className="">
+          <SkeletonLoader count='20'></SkeletonLoader>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-5">
