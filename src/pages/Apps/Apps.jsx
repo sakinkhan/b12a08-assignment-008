@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import SingleApp from "../../components/SingleApp/SingleApp";
 import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
-import SkeletonLoader from "../../components/LoadingSpinner/SkeletonLoader";
 
 const Apps = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchApp, setSearchApp] = useState("");
+  const [searching, setSearching] = useState(false);
 
+  // Fetch apps once on mount
   useEffect(() => {
     fetch("/appsData.json")
       .then((res) => res.json())
@@ -15,16 +16,29 @@ const Apps = () => {
       .finally(() => setLoading(false));
   }, []);
 
+  // Filtered apps, memoized for performance
+  const filteredApps = useMemo(() => {
+    return data.filter((app) =>
+      app.title.toLowerCase().includes(searchApp.trim().toLowerCase())
+    );
+  }, [data, searchApp]);
+
+  // Handle search input
   const handleSearchOnChange = (e) => {
-    setSearchApp(e.target.value.trimStart())
+    const value = e.target.value;
+    setSearchApp(value);
+    setSearching(true);
   };
-  
-  const filteredApps = data.filter((app) =>
-    app.title.toLowerCase().includes(searchApp.trim().toLowerCase())
-  );
+
+  // Once filtering completes, stop searching
+  useEffect(() => {
+    if (searching) {
+      setSearching(false);
+    }
+  }, [filteredApps]);
 
   return (
-    <div className="py-20 px-5 lg:px-20 bg-[#d2d2d2]/20">
+    <div className="py-20 px-5 lg:px-20 bg-[#d2d2d2]/20 min-h-screen">
       <h1 className="inter-font font-bold text-[32px] md:text-[48px] text-[#001931] text-center">
         Our All Applications
       </h1>
@@ -36,6 +50,7 @@ const Apps = () => {
         <p className="inter-font font-semibold text-[24px] text-[#001931]">
           ({filteredApps.length}) Apps Found
         </p>
+
         <div>
           <label className="input flex items-center gap-2">
             <svg
@@ -57,36 +72,35 @@ const Apps = () => {
             <input
               type="search"
               placeholder="Search Apps"
-              value={searchApp || ""}
+              value={searchApp}
               onChange={handleSearchOnChange}
               className="inter-font font-semibold text-[16px] px-2 py-1 border rounded"
             />
           </label>
         </div>
       </div>
-      {loading ? (
-        <div className="">
-          <SkeletonLoader count='20'></SkeletonLoader>
+
+      {(loading || searching) ? (
+        <div className="py-20 flex justify-center items-center">
+          <LoadingSpinner />
+        </div>
+      ) : filteredApps.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-5">
+          {filteredApps.map((app) => (
+            <SingleApp key={app.id} singleAppData={app} />
+          ))}
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-5">
-          {filteredApps.length > 0 ? (
-            filteredApps.map((singleAppData) => (
-              <SingleApp key={singleAppData.id} singleAppData={singleAppData} />
-            ))
-          ) : (
-            <div className="col-span-full mt-10 flex flex-col gap-6 items-center">
-              <p className="inter-font font-extrabold text-5xl text-center text-[#001931]/60">
-                No App Found
-              </p>
-              <button
-                onClick={() => setSearchApp("")}
-                className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-8 py-6 inter-font font-semibold text-[16px]"
-              >
-                Show All Apps
-              </button>
-            </div>
-          )}
+        <div className="col-span-full mt-10 flex flex-col gap-6 items-center">
+          <p className="inter-font font-extrabold text-5xl text-center text-[#001931]/60">
+            No App Found
+          </p>
+          <button
+            onClick={() => setSearchApp("")}
+            className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-8 py-6 inter-font font-semibold text-[16px]"
+          >
+            Show All Apps
+          </button>
         </div>
       )}
     </div>

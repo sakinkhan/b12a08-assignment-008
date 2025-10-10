@@ -13,7 +13,7 @@ const Banner = () => {
         </span>{" "}
         Apps
       </h1>
-      <p className="inter-font text-[#627382] text-[16px] md:text-[20px] text-center px-20 my-4">
+      <p className="inter-font text-[#627382] text-[16px] md:text-[20px] text-center px-5 md:px-20 my-4">
         At <span className="font-semibold text-[#632EE3]">HERO.IO</span>, we craft innovative apps designed to make everyday life
         simpler, smarter, and more exciting. Our goal is to turn your ideas into
         digital experiences that truly make an impact.

@@ -2,7 +2,6 @@ import React, { Suspense, useEffect, useState } from "react";
 import TrendingApp from "../TrendingApp/TrendingApp";
 import { useNavigate } from "react-router";
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
-import SkeletonLoader from "../LoadingSpinner/SkeletonLoader";
 
 const TrendingApps = () => {
   const [data, setData] = useState([]);
@@ -34,7 +33,7 @@ const TrendingApps = () => {
       </p>
       {loading ? (
         <div className="w-full">
-          <SkeletonLoader count='8'></SkeletonLoader>
+          <LoadingSpinner></LoadingSpinner>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

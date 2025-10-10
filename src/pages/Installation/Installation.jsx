@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import InstalledApp from "../../components/InstalledApp/InstalledApp";
 import { getInstalledApps } from "../../Utils/addToLocalStorage";
 import InstallationSkeleton from "../../components/LoadingSpinner/InstallationSkeleton";
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 
 
 const Installation = () => {
@@ -89,7 +90,7 @@ const Installation = () => {
       </div>
       {loading ? (
         <div className="w-full">
-          <InstallationSkeleton count={getInstalledApps().length}></InstallationSkeleton>
+          <LoadingSpinner></LoadingSpinner>
         </div>
       ) : installedList.length > 0 ? (
         <div className="space-y-4">
