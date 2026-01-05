@@ -1,17 +1,37 @@
-# App Name: 
-HERO.IO
-# Description: 
-HERO.IO is a showcase platform for our mobile app development work. We build productive, user-focused apps that make everyday life simpler, smarter, and more engaging. This website highlights the apps we’ve created for both iOS and Android, giving users and developers an easy way to explore our work.
-Users can also install those apps in their ios or android devices and it will also be stored in their Installation tab. Later on they can also uninstall the apps directly from our website.
-The website is built as a Single Page Application (SPA) using React Router, which means navigation between pages feels instant and fluid — no page reloads, no waiting. Users can explore all the apps we've built, browse details, and interact with a clean, fast interface powered by client-side routing.
-The interface focuses on clarity and responsiveness. I used Tailwind CSS and DaisyUI to build a clean, consistent design system that adapts beautifully across devices. Every component is built to be reusable and scalable, mirroring how I approach real-world development.
+### **Hero IO**
 
-# Technologies Used:
-- React – Core framework for building the UI
-- React Router – For smooth page navigation
-- Tailwind CSS + DaisyUI – For modern, responsive styling
-- Font Awesome – For icons
-- JSON (sample data) – Generated using ChatGPT
-- Unsplash – For sample images
-- Git and GitHub – Version control and Repository
-- Netlify – Hosting and deployment
+**Repository:**  
+[View Repository](https://github.com/sakinkhan/b12a08-assignment-008.git)
+
+**Live:** 
+[View Live Application](https://dashing-gumdrop-ad362c.netlify.app/)
+
+**Overview:**  
+Hero IO is a responsive app discovery platform inspired by modern app stores. It allows users to browse, search, sort, install, and manage applications, with a strong focus on UI state management, data-driven views, and client-side persistence.
+
+**Tech (Client):**  
+React · Tailwind CSS · DaisyUI · Recharts · LocalStorage · Vercel / Netlify
+
+**System Scope & Scale:**  
+- Manages a structured dataset of 12–20 applications  
+- Supports multi-page navigation with dynamic routing  
+- Designed for smooth client-side interaction and state consistency  
+
+**How the System Works (Workflow):**  
+1. Users browse featured and top applications from structured JSON data.  
+2. Applications can be searched in real time and sorted by download count.  
+3. Users view detailed app information, including ratings and review charts.  
+4. Apps can be installed and managed using browser localStorage.  
+
+**Key Capabilities:**  
+- Fully responsive layout across all device sizes  
+- Live search with instant filtering and empty-state handling  
+- App installation and uninstallation using persistent localStorage  
+- Interactive data visualisation using Recharts  
+- Robust routing with custom error and not-found handling  
+- Loading indicators during navigation and search operations  
+
+**Quality & Delivery Focus:**  
+- Production-ready build with error-free deployment  
+- Clean routing support for page reloads after deployment  
+- Structured component design aligned with Figma specifications 
